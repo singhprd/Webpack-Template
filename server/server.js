@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 
 
-app.use(express.static('client/build'));
+app.use(express.static('../client/build'));
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
